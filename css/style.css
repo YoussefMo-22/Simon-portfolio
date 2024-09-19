@@ -1,0 +1,622 @@
+:root{
+    --mainColor: #1ec797;
+    --btnHover: #199874;
+    --bg-secondary: #f8f9fa;
+}
+::selection {
+    background-color: var(--mainColor);
+    color: #fff;
+}
+*{
+    scroll-behavior: smooth;
+}
+/*******************NAVBAR START******************/
+.navbar .logo{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.navbar .nav-item a{
+    color: white;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+.navbar .nav-item .active,
+.navbar .nav-item a:hover{
+    color: var(--mainColor);
+}
+.navbar .icons .circle{
+    font-size: 20px;
+    margin: 0px 5px;
+}
+.navbar .icons .circle i{
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.navbar .icons .circle i.fa-twitter:hover{
+    color: #0086bf;
+}
+.navbar .icons .circle i.fa-facebook:hover{
+    color: #3b5998;
+}
+.navbar .icons .circle i.fa-dribbble:hover{
+    color: #b5005a;
+}
+/*******************NAVBAR END******************/
+/*******************MAIN START******************/
+.main{
+    background-image: url("../img/main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: rgba(65, 65, 65, 0.76);
+}
+.main .container p{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+.main .container h1{
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+}
+.main .container h1::after{
+    content: "|";
+    animation-name: slider;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.main .container button{
+    background-color: transparent;
+    color: var(--mainColor);
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid var(--mainColor);
+    padding: 10px 40px;
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+.main .container button:hover{
+    background-color: var(--mainColor);
+    color: #fff;
+}
+.main .container i{
+    font-size: 25px;
+    color: #fff;
+    top: 85%;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+/*******************MAIN END******************/
+/*******************ANIMATION KEYFRAMES START******************/
+@keyframes slider {
+    0%{
+        content: "|";
+    }
+    1%{
+        content: "I|";
+    }
+    2%{
+        content: "I'|";
+    }
+    3%{
+        content: "I'm|";
+    }
+    4%{
+        content: "I'm |";
+    }
+    5%{
+        content: "I'm S|";
+    }
+    6%{
+        content: "I'm Si|";
+    }
+    7%{
+        content: "I'm Sim|";
+    }
+    8%{
+        content: "I'm Simo|";
+    }
+    9%{
+        content: "I'm Simon|";
+    }
+    10%{
+        content: "I'm Simone|";
+    }
+    11%{
+        content: "I'm Simone |";
+    }
+    12%{
+        content: "I'm Simone O|";
+    }
+    13%{
+        content: "I'm Simone Ol|";
+    }
+    14%{
+        content: "I'm Simone Oli|";
+    }
+    15%{
+        content: "I'm Simone Oliv|";
+    }
+    16%{
+        content: "I'm Simone Olivi|";
+    }
+    17%{
+        content: "I'm Simone Olivia|";
+    }
+    18%{
+        content: "I'm Simone Olivia.|";
+    }
+    24%{
+        content: "I'm Simone Olivia.|";
+    }
+    25%{
+        content: "I'm Simone Olivia|";
+    }
+    26%{
+        content: "I'm Simone Olivi|";
+    }
+    27%{
+        content: "I'm Simone Oliv|";
+    }
+    28%{
+        content: "I'm Simone Oli|";
+    }
+    29%{
+        content: "I'm Simone Ol|";
+    }
+    30%{
+        content: "I'm Simone O|";
+    }
+    31%{
+        content: "I'm Simone |";
+    }
+    32%{
+        content: "I'm Simone|";
+    }
+    33%{
+        content: "I'm Simon|";
+    }
+    34%{
+        content: "I'm Simo|";
+    }
+    35%{
+        content: "I'm Sim|";
+    }
+    36%{
+        content: "I'm Si|";
+    }
+    37%{
+        content: "I'm S|";
+    }
+    38%{
+        content: "I'm |";
+    }
+    39%{
+        content: "I'm|";
+    }
+    40%{
+        content: "I'|";
+    }
+    41%{
+        content: "I|";
+    }
+    42%{
+        content: "|";
+    }
+    43%{
+        content: "I|";
+    }
+    44%{
+        content: "I'|";
+    }
+    45%{
+        content: "I'm|";
+    }
+    46%{
+        content: "I'm |";
+    }
+    47%{
+        content: "I'm a|";
+    }
+    48%{
+        content: "I'm a |";
+    }
+    49%{
+        content: "I'm a F|";
+    }
+    50%{
+        content: "I'm a Fr|";
+    }
+    51%{
+        content: "I'm a Fre|";
+    }
+    52%{
+        content: "I'm a Free|";
+    }
+    53%{
+        content: "I'm a Freel|";
+    }
+    54%{
+        content: "I'm a Freela|";
+    }
+    55%{
+        content: "I'm a Freelan|";
+    }
+    56%{
+        content: "I'm a Freelanc|";
+    }
+    57%{
+        content: "I'm a Freelance|";
+    }
+    58%{
+        content: "I'm a Freelancer|";
+    }
+    59%{
+        content: "I'm a Freelancer.|";
+    }
+    64%{
+        content: "I'm a Freelancer.|";
+    }
+    65%{
+        content: "I'm a Freelancer|";
+    }
+    66%{
+        content: "I'm a Freelance|";
+    }
+    67%{
+        content: "I'm a Freelanc|";
+    }
+    68%{
+        content: "I'm a Freelan|";
+    }
+    69%{
+        content: "I'm a Freela|";
+    }
+    70%{
+        content: "I'm a Freel|";
+    }
+    71%{
+        content: "I'm a Free|";
+    }
+    72%{
+        content: "I'm a Fre|";
+    }
+    73%{
+        content: "I'm a Frl|";
+    }
+    74%{
+        content: "I'm a F|";
+    }
+    75%{
+        content: "I'm a |";
+    }
+    76%{
+        content: "I'm a|";
+    }
+    77%{
+        content: "I'm |";
+    }
+    78%{
+        content: "I'm|";
+    }
+    79%{
+        content: "I'|";
+    }
+    80%{
+        content: "I|";
+    }
+    81%{
+        content: "|";
+    }
+    82%{
+        content: "I|";
+    }
+    83%{
+        content: "I'|";
+    }
+    84%{
+        content: "I'm|";
+    }
+    85%{
+        content: "I'm |";
+    }
+    86%{
+        content: "I'm  a|";
+    }
+    87%{
+        content: "I'm a |";
+    }
+    88%{
+        content: "I'm a D|";
+    }
+    89%{
+        content: "I'm a De|";
+    }
+    90%{
+        content: "I'm a Des|";
+    }
+    91%{
+        content: "I'm a Desi|";
+    }
+    92%{
+        content: "I'm a Desig|";
+    }
+    93%{
+        content: "I'm a Design|";
+    }
+    94%{
+        content: "I'm a Designe|";
+    }
+    95%{
+        content: "I'm a Designer|";
+    }
+    96%{
+        content: "I'm a Designer.|";
+    }
+    100%{
+        content: "I'm a Designer.|";
+    }
+}
+@keyframes arrow {
+    from{
+        top: 85%;
+        color: #ffffff00;
+    }
+    to{
+        top: 95%;
+        color: #ffffff;
+    }
+}
+/*******************ANIMATION KEYFRAMES END******************/
+/*******************HEADER START******************/
+.header h1{
+    font-size: 10vw;
+    font-weight: bolder;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    user-select: none;
+}
+.header h2{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 37px;
+}
+.header h2::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 4px;
+    background-color: var(--mainColor);
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+/*******************HEADER END******************/
+/*******************ABOUT START******************/
+.about h4{
+    font-size: 30px;
+
+}
+.about h4 span{
+    color: var(--mainColor);
+}
+.about ul li{
+    font-size: 20px;
+}
+.about ul li span{
+    font-weight: bold;
+}
+.about ul li a{
+    color: var(--mainColor);
+    text-decoration: none;
+}
+.about button,
+.contact button
+{
+    background-color: var(--mainColor);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 40px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.8;
+}
+.about button:hover,
+.contact button:hover
+{
+    background-color: var(--btnHover);
+    color: #fff;
+}
+/*******************ABOUT END******************/
+/*******************SERVICE START******************/
+.service{
+    background-color: var(--bg-secondary);
+}
+.service .icon-sqr i{
+    color: var(--mainColor);
+}
+.service p{
+    font-size: 17px;
+}
+/*******************SERVICE END******************/
+/*******************SUMMARY START******************/
+.summary .date span{
+    background-color: var(--mainColor);
+    font-size: 14px;
+}
+.summary .progress-bar{
+    background-color: var(--mainColor);
+}
+/*******************SUMMARY END******************/
+/*******************PORTFOLIO START******************/
+.portfolio{
+    background-color: var(--bg-secondary);
+}
+.portfolio li a{
+    color: gray;
+}
+.portfolio li a:hover
+{
+    color: var(--mainColor);
+}
+.portfolio .image{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.portfolio img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.portfolio .txt{
+    border-radius: 10px;
+    background: #00000086;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    opacity: 0;
+    z-index: 2;
+}
+.portfolio .image:hover img{
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+.portfolio .image:hover .txt{
+    opacity: 1;
+}
+/*******************PORTFOLIO END******************/
+/*******************CLIENTS START******************/
+.clients .card{
+    background-color: var(--bg-secondary);
+}
+
+.clients .radiobtn i{
+    color: var(--mainColor);
+    cursor: pointer;
+}
+/*******************CLIENTS END******************/
+/*******************CONTACT START******************/
+.contact{
+    background-color: var(--bg-secondary);
+}
+.contact p{
+    color: grey;
+    font-size: 18px;
+}
+.contact .contact-info i{
+    color: var(--mainColor);
+    font-size: 22px;
+}
+.contact .social i{
+    color: gray;
+    margin: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.contact .social i.fa-dribbble:hover{
+    color: #b5005a;
+}
+.contact .social i.fa-twitter:hover{
+    color: #0086bf;
+}
+.contact .social i.fa-facebook-f:hover{
+    color: #3b5998;
+}
+.contact .social i.fa-google:hover{
+    color: #dd4b39;
+}
+.contact .social i.fa-github:hover{
+    color: #333;
+}
+/*******************CONTACT END******************/
+/*******************FOOTER START******************/
+footer .content a{
+    color: var(--mainColor);
+}
+footer .content a:hover{
+    color: var(--btnHover);
+}
+/*******************FOOTER END******************/
+/*******************MEDIA QUERIES (xsm <576) START******************/
+@media screen and (max-width: 576px){
+    .main .container p{
+        font-size: 16px;
+    }
+    .main .container h1{
+        font-size: 38px;
+    }
+    .main .container button{
+        font-size: 16px;
+        padding: 5px 20px;
+    }
+
+    .header h1{
+        font-size: 45px;
+        color: #e7e4e4;
+    }
+    .header h2{
+        font-size: 26px;
+        padding-bottom: 5px;
+    }
+    .header h2::after{
+        bottom: -5px;
+    }
+
+    .about h4{
+        font-size: 20px;
+    }
+    .about button,
+    .contact button,
+    .summary button{
+        padding: 5px 20px !important;
+        font-size: 16px !important;
+    }
+    .about .info{
+        width: 50%;
+    }
+
+    .portfolio .image{
+        margin-bottom: 20px;
+    }
+
+    .clients .card{
+        margin: 20px 0px;
+    }
+
+    .contact .info{
+        text-align: center;
+        margin: 30px 0;
+    }
+    .contact .info{
+        align-items: center;
+        order: 2;
+    }
+
+    footer .content{
+        flex-direction: column;
+    }
+    footer .content .cr{
+        margin-bottom: 20px;
+    }
+}
+/*******************MEDIA QUERIES (xsm <576) END******************/
