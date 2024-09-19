@@ -7,6 +7,7 @@ A portfolio webpage displayed brief about developer, his education and experienc
 - Display all webpage sections on UI/UX principles
 - Webpage has responsive design that it displayed in different devices
 - It was designed by the grid system using rows and columns
+- There are animation features used on the webpage
 
 ## Technologies Used
 List the main programming languages, frameworks, and tools you used:
